@@ -10,8 +10,8 @@ body {
         font-family: Arial, sans-serif; /* Đổi font chữ */
         line-height: 1.6; /* Cách dòng cho dễ đọc */
         padding: 20px;
-        max-width: 800px;
-        margin: auto; /* Căn giữa toàn bộ trang web */
+        /*max-width: 800px;*/
+        /*margin: auto;*/ /* Căn giữa toàn bộ trang web */
     }
 /*--------------------------------------------------------------------------------------------------*/
 .intro-container {
@@ -26,6 +26,10 @@ body {
 .intro-container img {
     width: 200px;
     margin: 0; /* Xóa margin auto cũ nếu có */
+}
+
+.intro-container p1 {
+     justify-content: space-evenly;
 }
 @media (max-width: 600px) {
     .intro-container {
@@ -106,4 +110,7 @@ h1, h3, p, table, form {
 
 body {
     padding: 40px; /* Tạo khoảng trống xung quanh trang web */
+}
+html {
+    scroll-behavior: smooth; /* Giúp trang web cuộn từ từ khi nhấn vào Menu */
 }

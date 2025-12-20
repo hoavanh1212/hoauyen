@@ -21,9 +21,11 @@
         <div class="intro-container">
             <img src="https://i.pinimg.com/736x/9e/f7/aa/9ef7aafc0faf2841e4e759610e3302ff.jpg" alt=" Loài Hoa Tôi Yêu Thích ">
             <div>
-                <p> Tôi là một người mới lấy vợ vào đầu năm 2025 vợ tôi rất thích hoa hồng.
-                    Nên tôi đã lựa chọn logo hình ảnh hoa hồng làm biểu tượng.
-                </p>
+                <p1> Em yêu à, mỗi ngày được thức dậy bên em đối với anh đã là một món quà.
+                    Nụ cười của em làm anh quên hết mệt mỏi, còn sự dịu dàng của em khiến mọi bộn bề ngoài kia trở nên thật nhỏ bé.
+                    Anh có thể không nói nhiều, nhưng trong lòng anh luôn biết rõ rằng: có em ở bên, cuộc đời này trở nên ấm áp và trọn vẹn hơn rất nhiều.
+                    Cảm ơn em vì đã yêu anh, ở bên anh và làm cho mái nhà của chúng ta luôn đầy ắp yêu thương.
+                </p1>
             </div>
         </div>
     
@@ -70,12 +72,20 @@
 </div>
 
     <script>
-    // Khi người dùng nhấn nút Gửi trong Form
-    const form = document.querySelector('form');
-    form.addEventListener('submit', function(event) {
-        event.preventDefault(); // Ngăn trang web tải lại
-        alert('Chào anh/chị. Cảm ơn anh/chị đã gửi thông tin. Chúc anh/chị có một ngày thật vui vẻ');
-    });
+        const form = document.querySelector('form');
+        const nameInput = document.getElementById('name'); // Lấy ô nhập tên
+
+        form.addEventListener('submit', function(event) {
+            event.preventDefault(); // Không cho trang web tải lại
+            
+            const khachHang = nameInput.value; // Lấy giá trị bạn đã nhập vào ô tên
+
+            if (khachHang.trim() !== "") {
+                alert('Chào ' + khachHang + '! Cảm ơn bạn đã gửi tin nhắn. Chúc bạn một ngày tốt lành nhé! 🌹');
+            } else {
+                alert('Bạn ơi, hãy nhập tên để Hòa biết ai đã ghé thăm nhé!');
+            }
+        });
     </script>
 
 </body>
