@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giới Thiệu Bản Thân</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+    <div class="logo">🌹 My Profile</div>
+    <ul class="nav-links">
+        <li><a href="#">Trang chủ</a></li>
+        <li><a href="#so-thich">Sở thích</a></li>
+        <li><a href="#ky-nang">Kỹ năng</a></li>
+        <li><a href="#lien-he">Liên hệ</a></li>
+    </ul>
+    </nav>
+<div class="main-content">
+    <h1 id="trang-chu"> Tôi là Lê Đăng Hòa </h1>
+        <div class="intro-container">
+            <img src="https://i.pinimg.com/736x/9e/f7/aa/9ef7aafc0faf2841e4e759610e3302ff.jpg" alt=" Loài Hoa Tôi Yêu Thích ">
+            <div>
+                <p> Tôi là một người mới lấy vợ vào đầu năm 2025 vợ tôi rất thích hoa hồng.
+                    Nên tôi đã lựa chọn logo hình ảnh hoa hồng làm biểu tượng.
+                </p>
+            </div>
+        </div>
+    
+    <hr>
+        <h3 id="so-thich"> Sở Thích Của Tôi </h3>
+        <ul>
+            <li> Làm nhạc </li>
+            <li> Đá Bóng </li>
+            <li> Đọc Sách </li>
+            <li><b style="color: red;"> Đặc Biệt Là Tôi Thích Nấu Ăn Cho Vợ Tôi </b></li>
+        </ul>
+    <hr>
+        <h3 id="ky-nang"> Kỹ Năng </h3>
+        <table border="1">
+            <tr>
+                <th> Kỹ Năng </th>
+                <th> Mức Độ Thành Thạo </th>
+            </tr>
+            <tr>
+                <td> Tiếng Anh </td>
+                <td> Toeic 550 </td>
+            </tr>
+            <tr>
+                <td> Tiếng Trung </td>
+                <td> HSK1 </td>
+            </tr>
+            <tr>
+                <td> Lập Trình </td>
+                <td> PLC, Arduino, Python, HTML </td>
+            </tr>
+        </table>
+    <hr>
+        <h3 id="lien-he"> Thắc Mắc Gì Hãy Gửi Đến Tôi Nhé </h3>
+        <form>
+            <label for="name">Họ và tên:</label><br>
+            <input type="text" id="name" name="name" placeholder="Nhập tên của bạn..."><br><br>
+
+            <textarea rows="5" cols="60" name="comment" placeholder="Nhập văn bản ..."></textarea><br><br>
+            <button type="submit">Gửi</button>
+        </form>
+    <hr>
+    <p style="color: greenyellow;">Bản Quyền Thuộc Về Lê Đăng Hòa</p>
+    <a href="https://www.facebook.com/le.ang.hoa.157157" > Facebook </a>
+</div>
+
+    <script>
+    // Khi người dùng nhấn nút Gửi trong Form
+    const form = document.querySelector('form');
+    form.addEventListener('submit', function(event) {
+        event.preventDefault(); // Ngăn trang web tải lại
+        alert('Chào anh/chị. Cảm ơn anh/chị đã gửi thông tin. Chúc anh/chị có một ngày thật vui vẻ');
+    });
+    </script>
+
+</body>
+</html>
