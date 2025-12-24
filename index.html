@@ -79,33 +79,7 @@
     <a href="https://www.facebook.com/le.ang.hoa.157157" > Facebook </a>
 </div>
 
-    <script>
-    // Chỉ khai báo biến một lần duy nhất ở đầu
-    const myForm = document.querySelector('form');
-    const nameInput = document.getElementById('name');
 
-    // Xử lý sự kiện gửi Form
-    myForm.addEventListener('submit', function(event) {
-        event.preventDefault(); // Ngăn trang web tải lại
-        
-        const khachHang = nameInput.value.trim(); // Lấy tên và xóa khoảng trắng thừa
-
-        // Kiểm tra điều kiện tên
-        if (khachHang === "Uyên") {
-            alert("Chào bà xã đại nhân! Chúc vợ một ngày tràn đầy hoa hồng! 🌹🌹🌹");
-        } else if (khachHang !== "") {
-            alert("Chào " + khachHang + "! Cảm ơn bạn đã gửi tin nhắn. Chúc bạn một ngày tốt lành nhé! 🌹");
-        } else {
-            alert("Bạn ơi, hãy nhập tên để Hòa biết ai đã ghé thăm nhé!");
-        }
-    });
-
-    // Hàm đổi màu nền ngẫu nhiên
-    function doiMauNen() {
-        const mauNgauNhien = "#" + Math.floor(Math.random()*16777215).toString(16);
-        document.body.style.backgroundColor = mauNgauNhien;
-    }
-</script>
-
+<script src="script.js"></script>
 </body>
 </html>
